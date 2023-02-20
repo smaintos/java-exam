@@ -10,31 +10,31 @@ public class Kart extends Vehicle {
     }
 
     public String toString(){
-        String vaSpeed = "";
-        String vaAdhesion = "";
+        String stateSpeed = "";
+        String stateAdhesion = "";
         if (Kart.Speed == 1 || Kart.Speed == 2){
-            vaSpeed = "slow";
+            stateSpeed = "slow";
         } else if (Kart.Speed == 3 || Kart.Speed == 4){
-            vaSpeed = "rather slow";
+            stateSpeed = "rather slow";
         } else if (Kart.Speed == 5 || Kart.Speed == 6) {
-            vaSpeed = "rather fast";
+            stateSpeed = "rather fast";
         } else if (Kart.Speed == 7 || Kart.Speed == 8) {
-            vaSpeed = "fast";
+            stateSpeed = "fast";
         } else if (Kart.Speed == 9 || Kart.Speed == 10) {
-            vaSpeed = "very fast";
+            stateSpeed = "very fast";
         }
         if (Kart.Adhesion == 1 || Kart.Adhesion == 2){
-            vaAdhesion = "barely sticks to the ground";
+            stateAdhesion = "barely sticks to the ground";
         } else if (Kart.Adhesion == 3 || Kart.Adhesion == 4){
-            vaAdhesion = "sticks to the ground";
+            stateAdhesion = "sticks to the ground";
         } else if (Kart.Adhesion == 5 || Kart.Adhesion == 6) {
-            vaAdhesion = "grips the ground quite well";
+            stateAdhesion = "grips the ground quite well";
         } else if (Kart.Adhesion == 7 || Kart.Adhesion == 8) {
-            vaAdhesion = "adheres well to the ground";
+            stateAdhesion = "adheres well to the ground";
         } else if (Kart.Adhesion == 9 || Kart.Adhesion == 10) {
-            vaAdhesion = "adheres perfectly to the ground";
+            stateAdhesion = "adheres perfectly to the ground";
         }
-        return "This KART is " + vaSpeed + ", it has a " + Kart.Speed + " speed value, and it " + vaAdhesion + " with a " + Kart.Adhesion + " value of adhesion";
+        return "This KART is " + stateSpeed + ", it has a " + Kart.Speed + " speed statelue, and it " + stateAdhesion + " with a " + Kart.Adhesion + " statelue of adhesion";
     }
 
 }

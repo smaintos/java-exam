@@ -1,6 +1,5 @@
-import java.lang.Math;
 
-public abstract class Vehicle {
+public  class Vehicle {
     private int DistanceTraveled;
     private int Speed;
     private int Adhesion;
@@ -59,5 +58,7 @@ public abstract class Vehicle {
         else{
             DistanceTraveled = Speed*(11 - Adhesion);
         }
+    }
+    public void Forward() {
     }
 }
